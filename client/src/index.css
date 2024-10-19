@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding:0
+}
+#root{
+    width:100%;
+    background:linear-gradient(0deg, #00416A 14.16%, #D6B48D 42.42%, #FFEFDA 102.47%);
+   height:max-content;
+    overflow-x: hidden;
+    position: relative;
+}
