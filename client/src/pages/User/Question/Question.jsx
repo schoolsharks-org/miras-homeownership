@@ -149,15 +149,19 @@ const Question = () => {
                   value={(answered * 100) / 25}
                   sx={{ margin: "8px 0", borderRadius: "2px" }}
                 />
-                <Typography
-                  color={theme.palette.primary.main}
-                  fontSize="1.3rem"
-                  fontWeight="700"
-                  margin="16px 4px"
+                <Stack
+                  justifyContent={"center"}
                   height={"120px"}
+                  margin="16px 4px"
                 >
-                  {currentQuestion}
-                </Typography>
+                  <Typography
+                    color={theme.palette.primary.main}
+                    fontSize="1.3rem"
+                    fontWeight="700"
+                  >
+                    {currentQuestion}
+                  </Typography>
+                </Stack>
                 <Stack marginTop="16px" position="relative">
                   {options && (
                     <>
