@@ -8,10 +8,11 @@ import {
 } from "@mui/material";
 import React, { useState } from "react";
 import OurButton from "./Button";
-import { HomeOutlined, Refresh } from "@mui/icons-material";
+import { Refresh } from "@mui/icons-material";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { closeSession } from "../app/adminSlice";
+import homeIcon from "../assets/homeIcon.svg"
 
 const ScoreboardButtons = ({ role }) => {
   const navigate = useNavigate();
@@ -93,7 +94,8 @@ const ScoreboardButtons = ({ role }) => {
         }
       >
         <OurButton>
-          <HomeOutlined sx={{ fontSize: "1.7rem" }} />
+            <img src={homeIcon} alt="Home" style={{width:"40px",objectFit:"contain"}}/>
+          {/* <HomeOutlined sx={{ fontSize: "1.7rem" }} /> */}
         </OurButton>
       </Box>
       {role != "prevSession" && (
