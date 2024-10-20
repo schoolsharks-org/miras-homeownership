@@ -1,6 +1,6 @@
 
 
-export const goalTarget = 5000000
+export const goalTarget = 7500000
 
 export const questions = [
   {

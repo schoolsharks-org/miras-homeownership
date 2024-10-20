@@ -46,7 +46,7 @@ const Home = () => {
         fontWeight={"500"}
         marginTop={"26px"}
       >
-        The goal is to accumulate enough wealth to purchase a home worth INR 1 crore by making smart financial decisions.
+        The goal is to accumulate enough wealth to purchase a home worth INR 75 lakhs by making smart financial decisions.
       </Typography>
       <Typography
         fontSize="2rem"
