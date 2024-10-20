@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { closeSession } from "../../../app/adminSlice";
 import { useDispatch } from "react-redux";
 import { useState } from "react";
-import graphic from "../../../assets/sniff-and-tail-bg.png"
+import graphic from "../../../assets/sniff-and-tail-bg.webp"
 
 const Home = () => {
   const theme = useTheme();

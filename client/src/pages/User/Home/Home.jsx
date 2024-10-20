@@ -1,6 +1,6 @@
 import {Stack, Typography, useTheme } from "@mui/material";
 import React from "react";
-import background from "../../../assets/sniff-and-tail-bg.png";
+import background from "../../../assets/sniff-and-tail-bg.webp";
 import SwipeBar from "../../../components/SwipeBar";
 import { useNavigate } from "react-router-dom";
 const Home = () => {
