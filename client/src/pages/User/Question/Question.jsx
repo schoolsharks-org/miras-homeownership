@@ -9,12 +9,12 @@ import {
   CircularProgress,
   useMediaQuery,
 } from "@mui/material";
-import { HomeOutlined } from "@mui/icons-material";
 import { fetchNextQuestion } from "../../../app/questionSlice";
 import { motion, AnimatePresence } from "framer-motion";
 import OptionA from "./OptionA";
 import OptionB from "./OptionB";
 import Button from "../../../components/Button";
+import homeIcon from "../../../assets/homeIcon.svg"
 import { Navigate, useNavigate } from "react-router-dom";
 
 const questionVariants = {
@@ -209,7 +209,7 @@ const Question = () => {
                     }}
                   >
                     <Button>
-                      <HomeOutlined sx={{ fontSize: "1.7rem" }} />
+                      <img src={homeIcon} alt="" style={{width:"32px",objectFit:"contain"}} />
                     </Button>
                   </Box>
                 </Stack>

@@ -1,12 +1,12 @@
-import { HomeOutlined } from "@mui/icons-material";
 import { Box, Stack, Typography, useTheme } from "@mui/material";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import OurButton from "../../../components/Button";
 import { useDispatch, useSelector } from "react-redux";
 import TotalPlayers from "../../../components/TotalPlayers";
 import { useNavigate } from "react-router-dom";
 import "./Finished.css";
 import { resetState } from "../../../app/userSlice";
+import homeIcon from "../../../assets/homeIcon.svg";
 
 const Finished = () => {
   const theme = useTheme();
@@ -86,7 +86,7 @@ const Finished = () => {
               borderRadius: "50px",
               padding: "14px 20px",
               // background: "linear-gradient(#a69a85, #68797b)"
-              background: "#D6B48D"
+              background: "#D6B48D",
             }}
           >
             <Typography fontSize={"1.57rem"} fontWeight={"500"}>
@@ -114,7 +114,12 @@ const Finished = () => {
           }}
         >
           <OurButton>
-            <HomeOutlined sx={{ fontSize: "1.7rem" }} />
+            <img
+              src={homeIcon}
+              alt=""
+              style={{ width: "32px", objectFit: "contain" }}
+            />
+
           </OurButton>
         </Box>
       </Stack>

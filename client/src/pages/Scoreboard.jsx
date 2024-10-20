@@ -5,9 +5,10 @@ import FlipMove from "react-flip-move";
 import CountUp from "react-countup";
 import ScoreboardButtons from "../components/ScoreboardButtons";
 import qrCode from "../QR_CODE/qr-code.webp";
-import { HomeOutlined } from "@mui/icons-material";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import homeIcon from "../assets/homeIcon.svg"
+import { HomeOutlined } from "@mui/icons-material";
 
 const Scoreboard = ({ role, totalPlayers, leaderboardData }) => {
   const theme = useTheme();
@@ -70,7 +71,7 @@ const Scoreboard = ({ role, totalPlayers, leaderboardData }) => {
             borderRadius={"8px"}
             sx={{ cursor: "pointer", position: "absolute", left: "16px" }}
           >
-            <HomeOutlined sx={{ fontSize: "1.7rem" }} />
+           <HomeOutlined sx={{fontSize:"1.7rem",color:"#ffffff"}}/>
           </Box>
           <Typography
             variant="h5"
