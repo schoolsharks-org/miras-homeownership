@@ -75,9 +75,7 @@ const Finished = () => {
           sx={{
             width: "max-content",
             borderRadius: "50px",
-            background: `conic-gradient(${theme.palette.primary.main} 0% ${goalReachPercentage}%,#ffffff ${
-              100 - goalReachPercentage
-            }% 100%)`,
+            background: `conic-gradient(${theme.palette.primary.main} 0% ${goalReachPercentage}%, #ffffff ${goalReachPercentage}% 100%)`,
             overflow: "hidden",
             margin: "auto",
           }}
