@@ -1,7 +1,7 @@
 
 
 // export const maxGrowth = 122 //Calculated by taking upperbound in each option
-export const goalTarget = 1000000
+export const goalTarget = 10000000
 
 export const questions = [
   {
