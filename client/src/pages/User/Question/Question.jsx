@@ -121,24 +121,26 @@ const Question = () => {
               >
                 <Stack
                   direction="row"
-                  marginTop="20px"
+                  marginTop="24px"
                   justifyContent="space-around"
                   color={theme.palette.primary.main}
                 >
                   <Stack alignItems="center" flex={1}>
-                    <Typography variant="body2">Bank Balance</Typography>
+                    <Typography  fontWeight={"500"}>
+                      Bank Balance
+                    </Typography>
                     <Typography variant="h6" fontWeight={"700"}>
                       {wealth}
                     </Typography>
                   </Stack>
-                  <Stack alignItems="center" flex={1}>
-                    <Typography variant="body2">Investments</Typography>
+                  <Stack alignItems="center" flex={1} fontWeight={"500"}>
+                    <Typography >Investments</Typography>
                     <Typography variant="h6" fontWeight={"700"}>
                       {investment}
                     </Typography>
                   </Stack>
-                  <Stack alignItems="center" flex={1}>
-                    <Typography variant="body2">Year</Typography>
+                  <Stack alignItems="center" flex={1} fontWeight={"500"}>
+                    <Typography >Year</Typography>
                     <Typography variant="h6" fontWeight={"700"}>
                       {year}
                     </Typography>
@@ -147,7 +149,15 @@ const Question = () => {
                 <LinearProgress
                   variant="determinate"
                   value={(answered * 100) / 25}
-                  sx={{ margin: "8px 0", borderRadius: "2px" }}
+                  sx={{
+                    margin: "16px 0 8px",
+                    borderRadius: "2px",
+                    "& .MuiLinearProgress-bar": {
+                      backgroundColor: theme.palette.primary.main, 
+                    },
+                    backgroundColor: "#7793AF",
+                    boxShadow:"0 0 10px #ffffff"
+                  }}
                 />
                 <Stack
                   justifyContent={"center"}

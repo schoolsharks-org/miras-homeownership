@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Stack, useMediaQuery, useTheme } from "@mui/material";
-import { Route, Routes, useLocation, useNavigate } from "react-router-dom";
+import { Navigate, Route, Routes, useLocation, useNavigate } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import Home from "./Home/Home";
 import Login from "./Login/Login";
@@ -20,6 +20,8 @@ const Main = () => {
   useEffect(() => {
     initializeAuth(navigate, dispatch);
   }, [dispatch]);
+
+
 
   return (
     <Stack
@@ -42,6 +44,7 @@ const Main = () => {
             path="/completed"
             element={<AnimatedPage Component={Finished} />}
           />
+          <Route path="/" element={<Navigate to="/home" />} />
         </Routes>
       </AnimatePresence>
     </Stack>
