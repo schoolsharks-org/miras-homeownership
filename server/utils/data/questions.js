@@ -1,7 +1,6 @@
 
 
-// export const maxGrowth = 122 //Calculated by taking upperbound in each option
-export const goalTarget = 10000000
+export const goalTarget = 5000000
 
 export const questions = [
   {
@@ -242,25 +241,25 @@ export const questions = [
       }
     }
   },
+  // {
+  //   id: 15,
+  //   question: "A wedding expense arises, requiring Mira to spend INR 25,00,000.",
+  //   year: 8,
+  //   options: {
+  //     A: {
+  //       content: "Take a personal loan for 10 years  to cover the wedding costs.",
+  //       wealth: -2500000,
+  //       investment: 802096
+  //     },
+  //     B: {
+  //       content: "Withdraw from her investment portfolio.",
+  //       wealth: 0,
+  //       investment: -2308254
+  //     }
+  //   }
+  // },
   {
     id: 15,
-    question: "A wedding expense arises, requiring Mira to spend INR 25,00,000.",
-    year: 8,
-    options: {
-      A: {
-        content: "Take a personal loan for 10 years  to cover the wedding costs.",
-        wealth: -2500000,
-        investment: 802096
-      },
-      B: {
-        content: "Withdraw from her investment portfolio.",
-        wealth: 0,
-        investment: -2308254
-      }
-    }
-  },
-  {
-    id: 16,
     question: "Mira has an opportunity for a job abroad with higher salary but higher cost of living.",
     year: 9,
     options: {
@@ -277,7 +276,7 @@ export const questions = [
     }
   },
   {
-    id: 17,
+    id: 16,
     question: "Mira can upgrade to a car for INR 5,00,000.",
     year: 9,
     options: {
@@ -294,7 +293,7 @@ export const questions = [
     }
   },
   {
-    id: 18,
+    id: 17,
     question: "A market boom increases Mira's stock portfolio value by 20%.",
     year: 10,
     options: {
@@ -311,7 +310,7 @@ export const questions = [
     }
   },
   {
-    id: 19,
+    id: 18,
     question: "Mira loses her job for 6 months.",
     year: 11,
     options: {
@@ -328,7 +327,7 @@ export const questions = [
     }
   },
   {
-    id: 20,
+    id: 19,
     question: "Family expenses rise; Mira needs INR 6,00,000 for children's education.",
     year: 12,
     options: {
@@ -345,7 +344,7 @@ export const questions = [
     }
   },
   {
-    id: 21,
+    id: 20,
     question: "Large side hustle one off contract INR 5,00,000.",
     year: 13,
     options: {
@@ -362,7 +361,7 @@ export const questions = [
     }
   },
   {
-    id: 22,
+    id: 21,
     question: "Mira is close to achieving her goal of buying a house worth INR 1 crore.",
     year: 13,
     options: {
@@ -379,7 +378,7 @@ export const questions = [
     }
   },
   {
-    id: 23,
+    id: 22,
     question: "The real estate market crashes by 15%.",
     year: 14,
     options: {
@@ -396,7 +395,7 @@ export const questions = [
     }
   },
   {
-    id: 24,
+    id: 23,
     question: "Mira plans to start a side business requiring INR 2,00,000.",
     year: 15,
     options: {
@@ -413,7 +412,7 @@ export const questions = [
     }
   },
   {
-    id: 25,
+    id: 24,
     question: "Mira can contribute INR 5,00,000 towards her sibling's wedding.",
     year: 15,
     options: {
@@ -430,7 +429,7 @@ export const questions = [
     }
   },
   {
-    id: 26,
+    id: 25,
     question: "Mira receives a surprise bonus of INR 1,00,000 for excellent performance.",
     year: 15,
     options: {

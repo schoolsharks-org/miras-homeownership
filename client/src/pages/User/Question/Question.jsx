@@ -67,7 +67,7 @@ const Question = () => {
     );
   };
 
-  if (answered === 26) {
+  if (answered === 25) {
     return <Navigate to="/completed" />;
   }
 
@@ -146,7 +146,7 @@ const Question = () => {
                 </Stack>
                 <LinearProgress
                   variant="determinate"
-                  value={(answered * 100) / 26}
+                  value={(answered * 100) / 25}
                   sx={{ margin: "8px 0", borderRadius: "2px" }}
                 />
                 <Typography
